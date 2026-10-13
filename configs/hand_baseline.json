@@ -1,0 +1,16 @@
+{
+  "region": "hand",
+  "names": [
+    "中泉",
+    "大骨空",
+    "少商",
+    "三间",
+    "合谷",
+    "八邪1",
+    "八邪2",
+    "八邪3",
+    "八邪4",
+    "后溪"
+  ],
+  "source": "10-point experimental subset of original hand demo; not AIR-Net paper annotations"
+}

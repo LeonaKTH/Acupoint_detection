@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Acupoint Lab 穴位定位实验室</title>
+<style>body{margin:0;background:#f3f7f6;color:#173e36;font:16px system-ui}main{max-width:1000px;margin:auto;padding:40px 24px}h1{font-size:36px}section{background:white;padding:24px;margin:20px 0;border-radius:18px;box-shadow:0 4px 20px #173e3610}input,select,button{font:inherit;padding:10px;border:1px solid #b9cec7;border-radius:8px;margin:5px}button{background:#18785f;color:white;cursor:pointer}img{max-width:100%;border-radius:10px}pre{white-space:pre-wrap;word-break:break-word}label{display:inline-block}#status{color:#b04618}</style>
+<main><p>COMPUTER VISION · RESEARCH DEMO</p><h1>穴位定位实验室</h1><p>上传图像，查看定位结果、推理延迟与历史记录。结果用于算法研究和教学展示。</p>
+<section><h2>登录演示账号</h2><input id="password" type="password" placeholder="演示密码"><button id="login">登录</button><span id="loginState"></span></section>
+<section><h2>图像定位</h2><label>部位 <select id="region"><option value="ear">耳部</option><option value="face">面部</option><option value="hand">手部</option><option value="back">背部</option><option value="leg">腿部</option><option value="chest">胸部</option></select></label><input id="file" type="file" accept="image/*"><p><label>可选 ROI <input id="bbox" placeholder="x,y,width,height"></label><small>耳部请填写耳朵边界框，或上传已裁剪的耳部图。</small></p><button id="detect">开始定位</button><p id="status" role="status"></p><img id="result" alt=""><pre id="metrics"></pre></section>
+<section><h2>历史记录</h2><button id="history">刷新记录</button><pre id="records"></pre></section>
+<section><h2>穴位资料检索</h2><input id="query" placeholder="输入穴位名称"><button id="search">检索</button><pre id="catalog"></pre></section></main>
+<script>
+let token='';const $=id=>document.getElementById(id);
+async function request(url,options={}){options.headers={...options.headers,...(token?{Authorization:'Bearer '+token}:{})};const response=await fetch(url,options);const data=await response.json();if(!response.ok)throw Error(data.detail||'请求失败');return data;}
+$('login').onclick=async()=>{try{const data=await request('/api/v1/auth/token',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:$('password').value})});token=data.access_token;$('password').value='';$('loginState').textContent='已登录';}catch(e){$('loginState').textContent=e.message;}};
+$('detect').onclick=async()=>{if(!$('file').files.length){$('status').textContent='请先选择图片';return;}const form=new FormData();form.append('region',$('region').value);form.append('image',$('file').files[0]);if($('bbox').value)form.append('bbox',JSON.stringify($('bbox').value.split(',').map(Number)));$('status').textContent='正在处理…';try{const data=await request('/api/v1/detect',{method:'POST',body:form});$('result').src=data.annotated_image;delete data.annotated_image;$('metrics').textContent=JSON.stringify(data,null,2);$('status').textContent='定位完成';}catch(e){$('status').textContent=e.message;}};
+$('history').onclick=async()=>{try{$('records').textContent=JSON.stringify(await request('/api/v1/history'),null,2);}catch(e){$('records').textContent=e.message;}};
+$('search').onclick=async()=>{try{$('catalog').textContent=JSON.stringify(await request('/api/v1/catalog?q='+encodeURIComponent($('query').value)),null,2);}catch(e){$('catalog').textContent=e.message;}};
+</script></html>

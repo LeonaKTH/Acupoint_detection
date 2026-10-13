@@ -1,0 +1,8 @@
+{
+  "note": "Synthetic affine example; values are not anatomical coordinates",
+  "target_landmarks": [[10,20],[110,20],[10,120],[110,120]],
+  "templates": [
+    {"landmarks":[[0,0],[1,0],[0,1],[1,1]],"acupoints":[[0.3,0.4],[0.7,0.6]]},
+    {"landmarks":[[0,0],[2,0],[0,2],[2,2]],"acupoints":[[0.6,0.8],[1.4,1.2]]}
+  ]
+}

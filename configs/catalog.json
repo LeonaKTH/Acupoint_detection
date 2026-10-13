@@ -1,0 +1,436 @@
+[
+  {
+    "id": "ear_0",
+    "name": "肾上腺",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_1",
+    "name": "耳尖",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_2",
+    "name": "胃",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_3",
+    "name": "眼",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_4",
+    "name": "口",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_5",
+    "name": "肝",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_6",
+    "name": "对屏尖",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_7",
+    "name": "心",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_8",
+    "name": "肺",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_9",
+    "name": "肺2",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_10",
+    "name": "膀胱",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_11",
+    "name": "脾",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_12",
+    "name": "角窝中",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_13",
+    "name": "神门",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_14",
+    "name": "肾",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_15",
+    "name": "耳门",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_16",
+    "name": "听宫",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_17",
+    "name": "听会",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_18",
+    "name": "肩",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_19",
+    "name": "扁桃体",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "ear_20",
+    "name": "腰骶椎",
+    "region": "ear",
+    "source": "existing project COCO metadata",
+    "method": "21-point ROI keypoint regression"
+  },
+  {
+    "id": "face_0",
+    "name": "印堂",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_1",
+    "name": "神庭",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_2",
+    "name": "攒竹_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_3",
+    "name": "攒竹_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_4",
+    "name": "阳白_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_5",
+    "name": "阳白_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_6",
+    "name": "头临泣_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_7",
+    "name": "头临泣_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_8",
+    "name": "睛明_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_9",
+    "name": "睛明_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_10",
+    "name": "瞳子髎_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_11",
+    "name": "瞳子髎_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_12",
+    "name": "承泣_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_13",
+    "name": "承泣_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_14",
+    "name": "四白_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_15",
+    "name": "四白_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_16",
+    "name": "迎香_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_17",
+    "name": "迎香_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_18",
+    "name": "素髎",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_19",
+    "name": "地仓_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_20",
+    "name": "地仓_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_21",
+    "name": "颊车_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_22",
+    "name": "颊车_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_23",
+    "name": "上关_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_24",
+    "name": "上关_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_25",
+    "name": "下关_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_26",
+    "name": "下关_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_27",
+    "name": "听宫_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_28",
+    "name": "听宫_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_29",
+    "name": "翳风_左",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "face_30",
+    "name": "翳风_右",
+    "region": "face",
+    "source": "existing project face mapping",
+    "method": "MediaPipe geometric baseline"
+  },
+  {
+    "id": "hand_0",
+    "name": "中泉",
+    "region": "hand",
+    "source": "existing project hand demo",
+    "method": "landmark interpolation / atlas experiment"
+  },
+  {
+    "id": "hand_1",
+    "name": "大骨空",
+    "region": "hand",
+    "source": "existing project hand demo",
+    "method": "landmark interpolation / atlas experiment"
+  },
+  {
+    "id": "hand_2",
+    "name": "少商",
+    "region": "hand",
+    "source": "existing project hand demo",
+    "method": "landmark interpolation / atlas experiment"
+  },
+  {
+    "id": "hand_3",
+    "name": "三间",
+    "region": "hand",
+    "source": "existing project hand demo",
+    "method": "landmark interpolation / atlas experiment"
+  },
+  {
+    "id": "hand_4",
+    "name": "合谷",
+    "region": "hand",
+    "source": "existing project hand demo",
+    "method": "landmark interpolation / atlas experiment"
+  },
+  {
+    "id": "hand_5",
+    "name": "八邪1",
+    "region": "hand",
+    "source": "existing project hand demo",
+    "method": "landmark interpolation / atlas experiment"
+  },
+  {
+    "id": "hand_6",
+    "name": "八邪2",
+    "region": "hand",
+    "source": "existing project hand demo",
+    "method": "landmark interpolation / atlas experiment"
+  },
+  {
+    "id": "hand_7",
+    "name": "八邪3",
+    "region": "hand",
+    "source": "existing project hand demo",
+    "method": "landmark interpolation / atlas experiment"
+  },
+  {
+    "id": "hand_8",
+    "name": "八邪4",
+    "region": "hand",
+    "source": "existing project hand demo",
+    "method": "landmark interpolation / atlas experiment"
+  },
+  {
+    "id": "hand_9",
+    "name": "后溪",
+    "region": "hand",
+    "source": "existing project hand demo",
+    "method": "landmark interpolation / atlas experiment"
+  }
+]
